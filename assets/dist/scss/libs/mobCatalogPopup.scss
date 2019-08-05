@@ -1,0 +1,139 @@
+.overlay-catalogPopup{
+    .close-popup {
+        top: 30px;
+    }
+    .catalogPopup{
+        top: 165px;
+        left: 0;
+        z-index: 4;
+        width: 100%;
+        max-width: 305px;
+        position: absolute;
+        padding: 0;
+        background-color: #ffffff;
+        .content{
+            padding: 30px 15px;
+            h3{
+                text-align: center;
+                color: #363636;
+                font-family: "Montserrat-SemiBold";
+                font-size: 18px;
+            }
+            .catalogList{
+                margin-top: 25px;
+                ul{
+                    li{
+                        margin-bottom: 15px;
+                        &:last-of-type{
+                            margin-bottom: 0;
+                        }
+                        a{
+                            color: #020202;
+                            font-size: 16px;
+                            position: relative;
+                            padding-left: 40px;
+                            &::before{
+                                font-size: 22px;
+                                position: absolute;
+                                left: 0;
+                                top: -3px;
+                                color: $color-pink;
+                                font-family: 'fontello';
+                            }
+                        }
+                        &.gymnastics{
+                            a{
+                                &::before{
+                                    content: '\e806';
+                                }
+                            }
+                        }
+                        &.figure-skating{
+                            a{
+                                &::before{
+                                    content: '\e81c';
+                                }
+                            }
+                        }
+                        &.dancing{
+                            a{
+                                &::before{
+                                    content: '\e807';
+                                }
+                            }
+                        }
+                        &.promotions{
+                            a{
+                                &::before{
+                                    content: '\e808';
+                                }
+                            }
+                        }
+                        &.gift-baskets{
+                            a{
+                                &::before{
+                                    content: '\e813';
+                                }
+                            }
+                        }
+                        &.accessories{
+                            a{
+                                &::before{
+                                    content: '';
+                                    background-image: url('../img/accessories-ico.png');
+                                    background-size: contain;
+                                    background-repeat: no-repeat;
+                                    width: 22px;
+                                    height: 23px;
+                                }
+                            }
+                        }
+                        &.stationery{
+                            a{
+                                &::before{
+                                    content: '\e815';
+                                }
+                            }
+                        }
+                        &.clothing{
+                            a{
+                                &::before{
+                                    content: '\e816';
+                                }
+                            }
+                        }
+                        &.wholesale{
+                            a{
+                                &::before{
+                                    content: '\e817';
+                                }
+                            }
+                        }
+                        &.buyers{
+                            a{
+                                &::before{
+                                    content: '\e812';
+                                }
+                            }
+                        }
+                        &.own-design{
+                            a{
+                                &::before{
+                                    content: '\e818';
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .overlay-catalogPopup{
+        &.active{
+            display: none;
+        }
+    }
+}
