@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>СитиФабрика</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/constructor.css">
+</head>
+
+<body>
+
+    <div class="overlay-popupSearch overlayPopup">
+        <div class="close"></div>
+        <div class="popupSearch">
+            <span class="close-popup"></span>
+            <div class="content">
+                <form>
+                    <div class="form-input">
+                        <input type="text" placeholder="Поиск">
+                        <button class="button">Найти</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="overlay-catalogPopup overlayPopup">
+        <div class="close"></div>
+        <div class="catalogPopup">
+            <span class="close-popup"></span>
+            <div class="content">
+                <h3>Каталог</h3>
+                <div class="catalogList">
+                    <nav>
+                        <ul>
+                            <li class="gymnastics">
+                                <a href="javascript:void(0)">Художественная гимнастика</a>
+                            </li>
+                            <li class="dancing">
+                                <a href="javascript:void(0)">Танцы</a>
+                            </li>
+                            <li class="promotions">
+                                <a href="javascript:void(0)">Балет</a>
+                            </li>
+                            <li class="figure-skating">
+                                <a href="javascript:void(0)">Фигурное катание</a>
+                            </li>
+                            <li class="gymnastics">
+                                <a href="javascript:void(0)">Художественная гимнастика</a>
+                            </li>
+                            <li class="dancing">
+                                <a href="javascript:void(0)">Танцы</a>
+                            </li>
+                            <li class="promotions">
+                                <a href="javascript:void(0)">Балет</a>
+                            </li>
+                            <li class="figure-skating">
+                                <a href="javascript:void(0)">Фигурное катание</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="flex-wrap">
+                    <div class="item">
+                        <div class="toggle-menu">
+                            <i class="icon-icon6"></i>
+                        </div>
+                        <ul class="header__contacts">
+                            <li>
+                                <a href="tel:+77777777777" class="header__phone">
+                                    <i class="icon-icon12"></i><span>+7 (777) 777 77 77</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:city_fabrica@gmail.com" class="header__email">
+                                    <i class="icon-icon23"></i>city_fabrica@gmail.com
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="header__social">
+                            <li>
+                                <a href="javascript:void(0)"><i class="icon-icon10"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><i class="icon-icon16"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><i class="icon-icon11"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><i class="icon-youtube"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item workingHours">
+                        <p class="title">График работы:</p>
+                        <p>пн-пт: 09:00 - 20:00</p>
+                        <p>сб-вс: 10:00 - 18:00</p>
+                    </div>
+                    <div class="item">
+                        <a href="index.html" class="header__logo">
+                            <img src="../img/logo.png" alt="logotype">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <ul class="topLinks">
+                            <li>
+                                <a href="javascript:void(0)">Гимнастика</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Фигурное катание</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Танцы</a>
+                            </li>
+                        </ul>
+                        <ul class="bottomLinks">
+                            <li class="signIn">
+                                <a href="javascript:void(0)">
+                                    <i class="icon-icon17"></i>
+                                </a>
+                            </li>
+                            <li class="header__search">
+                                <form>
+                                    <div class="form-input" id="headerSearch">
+                                        <input name="search" class="search-query" type="text" placeholder="Поиск...">
+                                        <button class="button"><i class="icon-icon18"></i></button>
+                                    </div>
+                                    <a href="javascript:void(0)" class="showSearch open-popupSearch"><i class="icon-icon18"></i></a>
+                                </form>
+                            </li>
+                            <li class="cart">
+                                <a href="javascript:void(0)">
+                                    <i class="icon-icon5"></i>
+                                    <span>Корзина (1)</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <div class="flex-wrap">
+                    <div class="menuIcon">
+                        <i class="icon-icon6"></i>
+                        <p>Меню</p>
+
+                        <!-- начало меню на планшете -->
+                        <div class="tabletMenu">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">Акции</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Подарочные наборы</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Аксессуары </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Канцтовары</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Одежда</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Опт</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Покупателям</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="workTime">
+                                <p>График работы:</p>
+                                <ul>
+                                    <li>
+                                        <p>пн-пт: 09:00 - 20:00</p>
+                                    </li>
+                                    <li>
+                                        <p>сб-вс: 10:00 - 18:00</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- конец меню на планшете -->
+                    </div>
+                    <div class="catalog">
+                        <a href="javascript:void(0)" class="open-catalogPopup"><i class="icon-icon6"></i> Каталог</a>
+
+                        <!-- начало меню каталога, только на планшете -->
+                        <div class="catalogList">
+                            <nav>
+                                <ul>
+                                    <li class="gymnastics">
+                                        <a href="javascript:void(0)">Художественная гимнастика</a>
+                                    </li>
+                                    <li class="dancing">
+                                        <a href="javascript:void(0)">Танцы</a>
+                                    </li>
+                                    <li class="promotions">
+                                        <a href="javascript:void(0)">Балет</a>
+                                    </li>
+                                    <li class="figure-skating">
+                                        <a href="javascript:void(0)">Фигурное катание</a>
+                                    </li>
+                                    <li class="gymnastics">
+                                        <a href="javascript:void(0)">Художественная гимнастика</a>
+                                    </li>
+                                    <li class="dancing">
+                                        <a href="javascript:void(0)">Танцы</a>
+                                    </li>
+                                    <li class="promotions">
+                                        <a href="javascript:void(0)">Балет</a>
+                                    </li>
+                                    <li class="figure-skating">
+                                        <a href="javascript:void(0)">Фигурное катание</a>
+                                    </li>
+
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- конец меню каталога, только на планшете -->
+
+                    </div>
+
+                    <!-- начало меню на мобильном -->
+                    <div id="mobileWrap" class="mobileWrap">
+                        <div class="mobileClose"></div>
+                        <a href="index.html" class="logo">
+                            <img src="../img/logo.png" alt="logotype">
+                        </a>
+                        <nav class="mobileMenu">
+                            <ul>
+                                <li class="gymnastics bold">
+                                    <a href="javascript:void(0)">Гимнастика</a>
+                                </li>
+                                <li class="figure-skating bold">
+                                    <a href="javascript:void(0)">Фигурное катание</a>
+                                </li>
+                                <li class="dancing bold">
+                                    <a href="javascript:void(0)">Танцы</a>
+                                </li>
+                                <li class="promotions">
+                                    <a href="javascript:void(0)">Акции</a>
+                                </li>
+                                <li class="gift-baskets">
+                                    <a href="javascript:void(0)">Подарочные наборы</a>
+                                </li>
+                                <li class="accessories">
+                                    <a href="javascript:void(0)">Аксессуары </a>
+                                </li>
+                                <li class="stationery">
+                                    <a href="javascript:void(0)">Канцтовары</a>
+                                </li>
+                                <li class="clothing">
+                                    <a href="javascript:void(0)">Одежда</a>
+                                </li>
+                                <li class="wholesale">
+                                    <a href="javascript:void(0)">Опт</a>
+                                </li>
+                                <li class="buyers">
+                                    <a href="javascript:void(0)">Покупателям</a>
+                                </li>
+                                <li class="own-design bold">
+                                    <a href="javascript:void(0)">Свой дизайн</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- конец меню на мобильном -->
+
+                    <!-- начало меню на десктопе -->
+                    <nav class="desktopMenu">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)">Акции</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Подарочные наборы</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Аксессуары </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Канцтовары</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Одежда</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Опт</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Покупателям</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- конец меню на десктопе -->
+
+                    <div class="ownDesign">
+                        <a href="javascript:void(0)">Свой дизайн</a>
+                    </div>
+                    <a href="javascript:void(0)" class="mobileCart">
+                        <i class="icon-icon5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="container">
+            <div class="calculatorWrap">
+                <div class="leftBlk">
+                    <!-- выбор изделия только на мобильном -->
+                    <div class="chooseProduct">
+                        <div class="topLine">
+                            <span class="current-value">
+                            Выбор изделия
+                        </span>
+                        </div>
+                        <ul class="productList">
+                            <li>
+                                <a href="javascript:void(0)">портплед</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">чехол для мяча</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">подушка</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">чехол на чемодан</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">чехол для скакалки</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">плед</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">рюкзак-мешок</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">косметичка</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">чехол для булав</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product__gallery-bigImg mobile">
+                        <img class="main-photo" src="../img/calculator-img.jpg" alt="photo">
+                    </div>
+                    <!--  -->
+                    <div class="product__gallery-preview">
+                        <h3>Вид</h3>
+                        <div class="flex-wrap">
+                            <div class="small-image active">
+                                <div class="imgWrap">
+                                    <img class="small-image-photo" src="../img/calculator-img.jpg" alt="photo">
+                                </div>
+                                <span>Спереди</span>
+                            </div>
+                            <div class="small-image">
+                                <div class="imgWrap">
+                                    <img class="small-image-photo" src="../img/home/girl2.jpg" alt="photo">
+                                </div>
+                                <span>Сзади</span>
+                            </div>
+                            <div class="small-image">
+                                <div class="imgWrap">
+                                    <img class="small-image-photo" src="../img/home/girl3.jpg" alt="photo">
+                                </div>
+                                <span>Слева</span>
+                            </div>
+                            <div class="small-image">
+                                <div class="imgWrap">
+                                    <img class="small-image-photo" src="../img/home/girl4.jpg" alt="photo">
+                                </div>
+                                <span>Справа</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filters">
+                        <div class="filters-item">
+                            <h3>Масштаб</h3>
+                            <div class="filters-body">
+                                <button class="zoom-in"><a href="https://www.jqueryscript.net/zoom/">Zoom</a> In</button>
+                                <button class="zoom-out">Zoom Out</button>
+                                <input type="range" class="zoomRange">
+                                <button class="reset">Reset</button>
+                            </div>
+                        </div>
+                        <div class="filters-item">
+                            <h3>Цвет</h3>
+                            <div class="filters-body">
+                                <ul class="colorBlk">
+                                    <li class="active">
+                                        <a href="javascript:void(0)" style="background-color: #e2f5fd"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" style="background-color: #fcd1d6"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" style="background-color: #feeef5"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" style="background-color: #bdb1d4"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filters-item">
+                            <h3>Размер</h3>
+                            <div class="filters-body">
+                                <ul class="sizeBlk">
+                                    <li class="active">
+                                        <a href="javascript:void(0)">XS</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">S</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">M</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">L</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">XL</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">XXL</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filters-item">
+                            <h3>Добавить элемент</h3>
+                            <div class="filters-body">
+                                <ul class="uploadImg">
+                                    <li>
+                                        <span>Картинку</span>
+                                        <label>
+                                            <i class="icon-icon2"></i>
+                                            <input type="file">
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <span>Фигуру</span>
+                                        <label>
+                                            <i class="icon-icon2"></i>
+                                            <input type="file">
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <span>Текст</span>
+                                        <label>
+                                            <input type="text" placeholder="введите текст">
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightBlk">
+                    <!-- выбор изделия только на десктопе -->
+                    <ul class="chooseItem">
+                        <li class="active">
+                            <a href="javascript:void(0)">портплед</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">чехол для мяча</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">подушка</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">чехол на чемодан</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">чехол для скакалки</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">плед</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">рюкзак-мешок</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">косметичка</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">чехол для булав</a>
+                        </li>
+                    </ul>
+                    <div class="product__gallery-bigImg desk">
+                        <img class="main-photo" src="../img/calculator-img.jpg" id="panzoom" alt="photo">
+                    </div>
+                    <!--  -->
+                </div>
+            </div>
+            <div class="bottomLine">
+                <div class="block">
+                    <div class="quantity">
+                        <h3>Количество</h3>
+                        <input type="number" min="100" placeholder="(от 100 штук)">
+                    </div>
+                    <div class="btn-wrap">
+                        <a href="javascript:void(0)" class="btn">Рассчитать стоимость</a>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="cost-blk">
+                        <h4>Стоимость:</h4>
+                        <span>2 500 RUB</span>
+                    </div>
+                    <div class="btn-wrap">
+                        <a href="javascript:void(0)" class="btn">Добавить в корзину</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="flex-wrap">
+                    <div class="item footer__logo">
+                        <a href="index.html">
+                            <img src="../img/logo.png" alt="logotype">
+                        </a>
+                    </div>
+                    <div class="item footer__menu">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)">Распродажа %</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Одежда </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Одежда</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Подарочные наборы</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Опт</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Опт</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Аксессуары и чехлы</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Покупателям</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Покупателям</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Канцтовары</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item payment">
+                        <p>Способы оплаты:</p>
+                        <ul>
+                            <li><img src="../img/visa.png" alt=""></li>
+                            <li><img src="../img/mastercard.png" alt=""></li>
+                            <li><img src="../img/logo-mir2.png" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="item social">
+                        <p>Мы в соц сетях:</p>
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)"><i class="icon-icon10"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><i class="icon-icon16"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><i class="icon-icon11"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><i class="icon-youtube"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="flex-wrap">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">Публичная оферта</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Политика конфиденциальности</a>
+                        </li>
+                    </ul>
+                    <p><span>2019 © Сити Фабрика.</span> <span>Все права защищены.</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.panzoom.min.js"></script>
+
+    <script src="../js/script.min.js"></script>
+    <script src="../js/constructor.min.js"></script>
+</body>
+
+</html>

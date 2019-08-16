@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>СитиФабрика</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/constructor.css">
+</head>
+<body>
+
+<!-- build:section layout.searchMobPopup-->
+<!-- /build -->
+<!-- build:section layout.mobCatalogPopup-->
+<!-- /build -->
+
+
+<!-- build:section layout.header-->
+<!-- /build -->
+
+<section class="main">
+    <div class="container">
+        <div class="calculatorWrap">
+            <div class="leftBlk">
+                <!-- выбор изделия только на мобильном -->
+                <div class="chooseProduct">
+                    <div class="topLine">
+                        <span class="current-value">
+                            Выбор изделия
+                        </span>
+                    </div>
+                    <ul class="productList">
+                        <li>
+                            <a href="javascript:void(0)">портплед</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">чехол для мяча</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">подушка</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">чехол на чемодан</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">чехол для скакалки</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">плед</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">рюкзак-мешок</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">косметичка</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">чехол для булав</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="product__gallery-bigImg mobile">
+                    <img class="main-photo" src="../img/calculator-img.jpg" alt="photo">
+                </div>
+                <!--  -->
+                <div class="product__gallery-preview">
+                    <h3>Вид</h3>
+                    <div class="flex-wrap">
+                        <div class="small-image active">
+                            <div class="imgWrap">
+                                <img class="small-image-photo" src="../img/calculator-img.jpg" alt="photo">
+                            </div>
+                            <span>Спереди</span>
+                        </div>
+                        <div class="small-image">
+                            <div class="imgWrap">
+                                <img class="small-image-photo" src="../img/home/girl2.jpg" alt="photo">
+                            </div>
+                            <span>Сзади</span>
+                        </div>
+                        <div class="small-image">
+                            <div class="imgWrap">
+                                <img class="small-image-photo" src="../img/home/girl3.jpg" alt="photo">
+                            </div>
+                            <span>Слева</span>
+                        </div>
+                        <div class="small-image">
+                            <div class="imgWrap">
+                                <img class="small-image-photo" src="../img/home/girl4.jpg" alt="photo">
+                            </div>
+                            <span>Справа</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="filters">
+                    <div class="filters-item">
+                        <h3>Масштаб</h3>
+                        <div class="filters-body">
+                            <button class="zoom-in"><a href="https://www.jqueryscript.net/zoom/">Zoom</a> In</button>
+                            <button class="zoom-out">Zoom Out</button>
+                            <input type="range" class="zoomRange">
+                            <button class="reset">Reset</button>
+                        </div>
+                    </div>
+                    <div class="filters-item">
+                        <h3>Цвет</h3>
+                        <div class="filters-body">
+                            <ul class="colorBlk">
+                                <li class="active">
+                                    <a href="javascript:void(0)" style="background-color: #e2f5fd"></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" style="background-color: #fcd1d6"></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" style="background-color: #feeef5"></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" style="background-color: #bdb1d4"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filters-item">
+                        <h3>Размер</h3>
+                        <div class="filters-body">
+                            <ul class="sizeBlk">
+                                <li class="active">
+                                    <a href="javascript:void(0)">XS</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">S</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">M</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">L</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">XL</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">XXL</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filters-item">
+                        <h3>Добавить элемент</h3>
+                        <div class="filters-body">
+                            <ul class="uploadImg">
+                                <li>
+                                    <span>Картинку</span>
+                                    <label> 
+                                        <i class="icon-icon2"></i>
+                                        <input type="file">
+                                    </label>
+                                </li>
+                                <li>
+                                    <span>Фигуру</span>
+                                    <label>
+                                        <i class="icon-icon2"></i>
+                                        <input type="file">
+                                    </label>
+                                </li>
+                                <li>
+                                    <span>Текст</span>
+                                    <label>
+                                        <input type="text" placeholder="введите текст">
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rightBlk">
+                <!-- выбор изделия только на десктопе -->
+                <ul class="chooseItem">
+                    <li class="active">
+                        <a href="javascript:void(0)">портплед</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">чехол для мяча</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">подушка</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">чехол на чемодан</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">чехол для скакалки</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">плед</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">рюкзак-мешок</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">косметичка</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">чехол для булав</a>
+                    </li>
+                </ul>
+                <div class="product__gallery-bigImg desk">
+                    <img class="main-photo" src="../img/calculator-img.jpg" id="panzoom" alt="photo">
+                </div>
+                <!--  -->
+            </div>
+        </div>
+        <div class="bottomLine">
+            <div class="block">
+                <div class="quantity">
+                    <h3>Количество</h3>
+                    <input type="number" min="100" placeholder="(от 100 штук)">
+                </div>
+                <div class="btn-wrap">
+                    <a href="javascript:void(0)" class="btn">Рассчитать стоимость</a>
+                </div>
+            </div>
+            <div class="block">
+                <div class="cost-blk">
+                    <h4>Стоимость:</h4>
+                    <span>2 500 RUB</span>
+                </div>
+                <div class="btn-wrap">
+                    <a href="javascript:void(0)" class="btn">Добавить в корзину</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- build:section layout.footer-->
+<!-- /build -->
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery.panzoom.min.js"></script>
+
+<script src="../js/script.min.js"></script>
+<script src="../js/constructor.min.js"></script>
+</body>
+</html>
